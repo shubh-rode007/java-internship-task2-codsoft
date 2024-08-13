@@ -1,0 +1,31 @@
+// jay shree ram
+
+import java.util.Scanner;
+
+public class GreadCalculator {
+
+    public static void main(String args[]) {
+        int Marathi, English, Math, Science, History, total;
+        float avg;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the student mark out of 100 mark ");
+        Marathi = sc.nextInt();
+        English = sc.nextInt();
+        Math = sc.nextInt();
+        Science = sc.nextInt();
+        History = sc.nextInt();
+        total = Marathi + English + Math + Science + History;
+        System.out.println("the total amark of the student is " + total);
+        avg = (total) / 5;
+        System.out.println("The avarage mark of the student is " + avg);
+        if (80 <= avg && 100 >= avg) {
+            System.out.println("Student get A grade ");
+        } else if (50 <= avg && 79 >= avg) {
+            System.out.println("Student get B grade ");
+        } else if (35 <= avg && 49 >= avg) {
+            System.out.println("Student get C grade ");
+        } else {
+            System.out.println("Student get fail in exam ");
+        }
+    }
+}
